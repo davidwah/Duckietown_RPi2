@@ -1,4 +1,4 @@
-* Update certificates
+# Update certificates
 ```
 sudo apt-get install --reinstall ca-certificates
 ```
@@ -9,18 +9,18 @@ Setup .gitconfig
         sslVerify = true
         sslCAinfo = /etc/ssl/certs/ca-certificates.crt
 [user]
-        email = derek@derekmolloy.ie
-        name = derekmolloy
+        email = name@mail.com
+        name = namename
 ```
-* Update apt-get archives
+# Update apt-get archives
 ```
 $ sudo apt-get update
 ```
-* Install ssh
+# Install ssh
 ```
 $ sudo apt-get install openssh-server
 ```
-* Setup ssh (first time)
+# Setup ssh (first time)
 ```
 $ ssh-keygen 
 ```
@@ -35,14 +35,14 @@ $ ssh-add ~/.ssh/id_rsa
 $ sudo apt-get install git
 ```
 
-* Run the runmeonrpi2.sh
+# Run the runmeonrpi2.sh
 
-* Edit .bashrc file. Add this line
+# Edit .bashrc file. Add this line
 ```
 source /opt/ros/indigo/setup.bash
 ```
 
-* Install packages
+# Install packages
 ```
 sudo apt-get install ros-indigo-tf-conversions
 sudo apt-get install ros-indigo-cv-bridge
@@ -50,17 +50,17 @@ sudo apt-get install ros-indigo-compressed-image-transport
 sudo apt-get install ros-indigo-camera-info-manager
 ```
 
-* Enable the camera
+# Enable the camera
 Just modify the file /boot/firmware/config.txt is enough.
 Just add a line "start_x=1" at the bottom of the file config.txt, save it, and reboot the system. 
 
-* Install picamera?
+# Install Picamera?
 ```
 $ sudo apt-get install python-pip
 $ sudo pip install picamera
 ```
 
-* [Get picamera to work](http://raspberrypi.stackexchange.com/questions/37359/how-to-use-raspistill-on-ubuntu)
+# [Get picamera to work](http://raspberrypi.stackexchange.com/questions/37359/how-to-use-raspistill-on-ubuntu)
 ```
 sudo base -c "echo 'start_x=1' >> /boot/config.txt"
 sudo base -c "echo 'gpu_mem=128' >> /boot/config.txt"
